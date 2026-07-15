@@ -1,0 +1,40 @@
+package collage;
+
+/**
+ *
+ * @author ashis
+ */
+import java.util.Scanner;
+public class Armstrong {
+    public static void main(String args[]){
+        Scanner x=new Scanner(System.in);
+        // Armstrong Number Code
+    System.out.println("Enter The number For Armstrong : ");
+    int a=Integer.valueOf(x.nextLine());
+    int copy=a;
+    int copy2=a;
+
+    int cnt=0;
+    while(copy>0){
+        int temp1=copy%10;
+        cnt+=1;
+        copy/=10;
+    }
+    
+
+    int result=0;
+    while(a>0){
+        int temp2=a%10;
+        result+=Math.pow(temp2,cnt);
+        a/=10;
+    }
+    
+    if(result==copy2){
+        System.out.println("It Is Armstrong.");
+    }
+    else{
+        System.out.println("It Is Not Armstrong");
+    }
+
+    }
+}
