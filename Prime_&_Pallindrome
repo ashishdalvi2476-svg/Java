@@ -1,0 +1,52 @@
+package collage;
+
+/**
+ *
+ * @author ashis
+ */
+import java.util.Scanner;
+public class ForLoop {
+    public static void main(String args[]){
+    Scanner x=new Scanner(System.in);
+    
+    // Prime Numbers Code 
+    System.out.println("Enter The number : ");
+    int n=Integer.valueOf(x.nextLine());
+    boolean IsPrime=true;
+    
+    for(int i=2;i*i<=n;i++){
+        if(n%i==0){
+            IsPrime=false;
+        }
+    }
+    
+    if(IsPrime){
+        System.out.println("It Is A Prime Number.");
+    }
+    else{
+        System.out.println("It Is Not A Prime Number.");
+    }
+    
+    // Pallindrome Number Code
+    System.out.println("Enter The number For Pallindrome : ");
+    int check=Integer.valueOf(x.nextLine());
+    int copy=check;
+    int sum=0;
+    
+    while(check>0){
+        int temp=check%10;
+        sum=((sum*10)+temp);
+        check=check/10;
+    }
+    
+    System.out.println(sum);
+    
+    if(sum==copy){
+        System.out.println("It Is Pallindrome.");
+    }
+    else{
+         System.out.println("It Is Not Pallindrome.");
+    }
+    
+}
+}
