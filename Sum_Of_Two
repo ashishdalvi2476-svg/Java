@@ -1,0 +1,21 @@
+package collage;
+
+/**
+ *
+ * @author ashis
+ */
+import java.util.Scanner;
+
+public class Sum_Of_Two_Int_005 {
+    public static void main(String[] args){
+        Scanner x=new Scanner(System.in);
+        
+        System.out.println("Enter The First Number : ");
+        int a=x.nextInt();
+        
+        System.out.print("Enter the Second Number : ");
+        int b=x.nextInt();
+        
+        System.out.println("Sum Is : "+ (a+b));
+    }
+}
