@@ -1,0 +1,25 @@
+package collage;
+
+/**
+ *
+ * @author ashis
+ */
+import java.util.Scanner;
+public class If_Else_Ladder {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.println("Enter the Number ; ");
+        int a=sc.nextInt();
+        
+        if(a<0){
+            System.out.print("Number Is Negative.");
+        }
+        else if(a>0){
+            System.out.print("Number Is Positive.");
+        }
+        else{
+            System.out.print("Number Is Zero.");
+        }
+    }
+}
