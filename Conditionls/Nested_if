@@ -1,0 +1,35 @@
+package collage;
+
+/**
+ *
+ * @author ashis
+ */
+import java.util.Scanner;
+public class Nested_If {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.print("Welcome To The Park !! \n");
+        System.out.println("To access The Roller Coaster Please Enter The Following Details : \n");
+        System.out.println("Enter Your Age & Height(in centimeter) ; ");
+        
+        int age=sc.nextInt();
+        int height=sc.nextInt();
+        
+        if(age>16){
+            if(height>91 && height<137){
+                System.out.println("You Can Go.");
+            }
+            else if(height<80){
+                System.out.println("Your Height is Too Low.");
+            }
+            else{
+                System.out.println("Your Height Is Too High.");
+            }
+        }
+        else{
+            System.out.println("Your Age Is Not Accepted.");
+            System.out.println("You Are Not Allowed To Board.");
+        }
+    }
+}
